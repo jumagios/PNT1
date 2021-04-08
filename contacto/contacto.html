@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<title>Resto ORT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<style>
+</style>
+
+<body>
+
+    <!-- Top menu -->
+    <div class="top">
+        <div class="xlarge">
+            <div id="mainPage" style="cursor:pointer; color:white">Resto ORT</div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="main content" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <form>
+            <h1>Registro</h1>
+            <div>
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" placeholder="nombre" required/>
+            </div>
+            <div>
+                <label>Apellido:</label>
+                <input type="text" placeholder="apellido" required/>
+            </div>
+            <div>
+                <div>
+                    <label>Género: </label>
+                    <input type="radio" name="sexo" value="hombre" />
+                    <label>Hombre</label>
+                    <input type="radio" name="sexo" value="mujer" />
+                    <label>Mujer</label>
+                    <input type="radio" name="sexo" value="otro" />
+                    <label>Otro</label>
+                </div>
+            </div>
+            <div>
+                <label>Mail:</label>
+                <input type="email" required/>
+                <label>Contraseña:</label>
+                <input type="password" required/>
+            </div>
+            <div>
+                <label>Fecha nacimiento:</label>
+                <input type="date" />
+            </div>
+            <div>
+                <label>Estoy de acuerdo con los términos y condiciones </label>
+                <input type="checkbox" required/>
+            </div>
+            <input type="submit" />
+        </form>
+
+
+        <hr id="about">
+
+        <!-- Footer -->
+        <footer class="row-padding" style="background-color:#0f0a0a;color:white;">
+            <div class="third">
+                <h4>CARTA RESTO ORT (PNT1)</h4>
+                <p>Gonzalo Martín Molina</p>
+                <p>Juan M. Gimenez</p>
+                <p>Martín Suarez Díaz</p>
+            </div>
+
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    $('#mainPage').click(function (e) {
+        location.href = '../index.html';
+    });
+</script>

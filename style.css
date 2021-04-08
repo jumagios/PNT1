@@ -3,6 +3,11 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+a{
+    color:wheat;
+    font-size:24px;
+}
+
 body {
     margin: 0
 }
